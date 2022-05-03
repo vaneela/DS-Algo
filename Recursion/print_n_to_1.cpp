@@ -7,12 +7,12 @@ void print(int n)
     {
         return;
     }
-    cout << "ok\n";
-
+    cout << n << endl;
     print(n - 1);
 }
 int main()
 {
+
     int n;
     cin >> n;
     print(n);
