@@ -44,7 +44,7 @@ int merge(int *arr, int s, int e)
 int mergesort(int *arr, int s, int e)
 {    int inv = 0,mid;
     if (s < e)
-    {   cout << inv << " ";
+    {   
         mid = s + (e - s) / 2;
         inv += mergesort(arr, s, mid);
         inv += mergesort(arr, mid + 1, e);
@@ -67,15 +67,10 @@ int main()
         {
             cin >> arr[i];
         }
-        // for(int i=0;i<n;i++){
-        //     cout << arr[i] << ' ';
-        // }
+        
         cout << endl;
        cout <<  mergesort(arr, 0, n - 1);
-        // for (int i = 0; i < n; i++)
-        // {
-        //     cout << arr[i] << ' ';
-        // }
+        
         cout << endl;
     }
     return 0;

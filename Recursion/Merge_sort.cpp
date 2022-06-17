@@ -46,17 +46,17 @@ void mergesort(int *arr, int s, int e){
 int main(){
     
     int t=1;
-    // cin >> t;
+    cin >> t;
     while(t--){
         int n;
         cin >> n;
-        int * arr = new int[n];
+        int  arr[n];
         for(int i=0;i<n;i++){
             cin >> arr[i];
         }
-        // for(int i=0;i<n;i++){
-        //     cout << arr[i] << ' ';
-        // }
+        for(int i=0;i<n;i++){
+            cout << arr[i] << ' ';
+        }
         cout << endl;
         mergesort(arr,0,n-1);
         for(int i=0;i<n;i++){
