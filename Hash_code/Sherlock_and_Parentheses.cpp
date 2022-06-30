@@ -5,7 +5,8 @@
 
 using namespace std;
 
-// last case failed 
+// all cases passed
+ 
 int main()
 {
     int t;
@@ -15,7 +16,7 @@ int main()
         int l, r;
         cin >> l >> r;
         int d = min(l, r);
-        int count = d*(d+1)/2;
+        int count = (ll)d*(d+1)/2;
         cout << "Case " <<"#" << x << ": " << count << endl;
     }
     return 0;
