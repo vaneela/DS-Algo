@@ -1,5 +1,6 @@
 #include<bits/stdc++.h>
 #define ll long long
+
 using namespace std;
 class Node{
     public:
@@ -11,6 +12,7 @@ class Node{
         this -> next = NULL;
     }
 };
+#include "InsertNode.cpp"
 Node *takeInput(){
     int data;
     cin >> data;
@@ -60,5 +62,10 @@ int main(){
 //     node3 -> next = node4;
 //     print(node2);
     Node * head = takeInput();
-    print(head);
+    // print(head);
+    int i,data;
+    cin >> data >> i ;
+    head =insertNode(head,i,data);
+    print (head);
+
 }
