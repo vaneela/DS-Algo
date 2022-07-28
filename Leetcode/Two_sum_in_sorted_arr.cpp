@@ -1,8 +1,4 @@
 #include <bits/stdc++.h>
-#define ll long long
-#define vi vector<int>
-#define ii pair<int, int>
-
 using namespace std;
 vi twoSum(vi &arr, int x)
 {
