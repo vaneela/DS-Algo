@@ -38,7 +38,7 @@ public:
             else if (i == e2)
                 ++c2;
         }
-        cout << c1 << " " << c2 << endl;
+        // cout << c1 << " " << c2 << endl;
         if (c1 <= floor(nums.size() / 3) && c2 <= floor(nums.size() / 3))
             return {};
         if (c1 > floor(nums.size() / 3) && c2 > floor(nums.size() / 3))
