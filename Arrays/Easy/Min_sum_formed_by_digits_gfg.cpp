@@ -22,3 +22,4 @@ long long int minSum(int arr[], int n)
         ans= num1+num2;
         return ans;
     }
+    
