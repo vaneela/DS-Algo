@@ -9,12 +9,12 @@ public:
             // return nums[mid];
             int bfr = nums[mid-1],aft = nums[mid+1];
             int bind = (mid-1)%2,aind=(mid+1)%2 ;
-            if(mid!=e)
-            { 
-                aft=nums[mid+1];
-                aind=(mid+1)%2;
+            // if(mid!=e)
+            // { 
+            //     aft=nums[mid+1];
+            //     aind=(mid+1)%2;
 
-            }
+            // }
             if(nums[mid] == bfr){
                 if(bind)
                     e= mid-1;
