@@ -32,3 +32,21 @@ public:
         return ans;    
     }
 };
+// recursive
+class Solution {
+    void solve(TreeNode* root, vector<vector<int>>&ans, int d){
+        if(root == NULL)
+            return;
+        if(ans.size() == d)
+            ans.push_back(vector<int>());
+        ans[d].push_back(root->val);
+        solve(root->left,ans,d+1);
+        solve(root->right,ans,d+1);
+    }
+public:
+    vector<vector<int>> levelOrder(TreeNode* root) {
+        vector<vector<int>>ans;
+        solve(root,ans,0);
+        return ans;
+    }
+};
